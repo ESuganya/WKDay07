@@ -1,0 +1,25 @@
+{
+  "name": "wkday07_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:all": "playwright test",
+    "test:master": "playwright test --grep @master",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:regression": "playwright test --grep @regression",
+    "test:authentication": "playwright test --grep Authentication",
+    "test:uat": "ENV=uat playwright test",
+    "test:sit": "ENV=sit playwright test"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "allure-playwright": "^3.15.0"
+  }
+}
